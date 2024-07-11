@@ -1,0 +1,27 @@
+body {
+
+}
+
+header {
+    background-color: yellow;
+}
+
+main {
+
+}
+
+section: first-child {
+    background-color: green;
+}
+
+div {
+
+}
+
+img {
+
+}
+
+section:last-child{
+    background-color: red;
+}
