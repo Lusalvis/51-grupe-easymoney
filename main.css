@@ -1,27 +1,38 @@
 body {
-
+    margin: 0;
+background-color: aquamarine;
 }
 
-header {
-    background-color: yellow;
+header,
+main > section:nth-child(1),
+main > section:nth-child(2){
+    display: inline-block;
+    width: 800px;
+    margin-left: calc(50% - 400px);
+ 
 }
 
 main {
+    margin-top: 60px;
 
 }
 
-section: first-child {
-    background-color: green;
+main > section + section {
+    margin-top: 60px;
 }
+
 
 div {
+    float: left;
+    width: 35%;
+    background-color: violet;
+}
+
+section > img {
+    float: right;
+    width: 55%;
 
 }
 
-img {
+   
 
-}
-
-section:last-child{
-    background-color: red;
-}
