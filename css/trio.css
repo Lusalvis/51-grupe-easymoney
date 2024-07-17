@@ -1,0 +1,47 @@
+.trio-list {
+    display: flex;
+    gap: 30px
+}
+
+.trio-list .trio {
+    width: 150px;
+    padding: 20px;
+    background-color: #e9f3ff;
+    border-radius: 20px;
+}
+.trio-list .trio:nth-child(2) {
+    background-color: #faeff6;
+}
+
+.trio-list .trio:nth-child(3) {
+    background-color: #f2ecff;
+}
+
+.trio-list img {
+    display: block;
+    height: 50px;
+    object-fit: contain;
+    object-position: left;
+    
+}
+
+.trio-list .tittle {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.trio-list .description {
+    font-size: 17px;
+    color: #779ce5;
+}
+
+.trio-list .trio:nth-child(2) .description {
+    font-size: 17px;
+    color: #c3648d;
+}
+
+.trio-list .trio:nth-child(3) .description: {
+    font-size: 17px;
+    color: #8885f6;
+}
