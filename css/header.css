@@ -1,28 +1,43 @@
-header.container {
+.main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
 }
-.logo {
+.main-header .logo {
     height: 30px;
 }
-.main-nav {
+.main-header .main-nav {
     display: flex;
     gap: 30px;
 }
-.link {
+.main-header .link {
     font-size: 20px;
     line-height: 1em;
     text-decoration: none;
     color: grey;
+    position: relative;
 }
-.link:hover {
+.main-header .link:hover {
     color: black;
-    text-decoration: underline;
 }
-.link.active {
+.main-header .link.active {
     color: black;
     text-decoration: none;
+}
+.main-header .link:hover::after,
+.main-header .link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.main-header .link.active::after {
+    background-color: #36f;
 }
